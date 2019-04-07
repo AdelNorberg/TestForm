@@ -11,7 +11,7 @@ const mutations = {
 }
 
 const actions = {
-	signIn ({commit}, values) {
+	signIn ({commit}) {
 		commit('loading')
 		// Sending data to the server. Sign in req
 		setTimeout(() => {
@@ -21,7 +21,7 @@ const actions = {
 		
 		commit('isLogin', true)
 	},
-	signUp ({commit}, values) {
+	signUp ({commit}) {
 		commit('loading')
 		// Sending data to the server. Register req
 		setTimeout(() => {
